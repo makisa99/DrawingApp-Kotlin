@@ -27,10 +27,10 @@ class MainActivity : AppCompatActivity() {
         val linearLayoutPaintColors = findViewById<LinearLayout>(R.id.ll_paint_colors)
 
         mImageButtonCurrentPaint = linearLayoutPaintColors[1] as ImageButton
-        mImageButtonCurrentPaint!!.setImageDrawable(
-            ContextCompat.getDrawable(this, R.drawable.pallete_pressed)
-
-        )
+//        mImageButtonCurrentPaint!!.setImageDrawable(
+//            ContextCompat.getDrawable(this, R.drawable.pallete_pressed)
+//
+//        )
 
         val id_brush: Button = findViewById(R.id.id_brush)
         id_brush.setOnClickListener {
