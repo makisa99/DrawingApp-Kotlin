@@ -72,7 +72,6 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
                         mDrawPath!!.moveTo(touchX, touchY)
                     }
                 }
-                Log.d("DOWN","DOWN")
             }
 
             MotionEvent.ACTION_MOVE -> {
@@ -81,12 +80,10 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
                         mDrawPath!!.lineTo(touchX, touchY)
                     }
                 }
-                Log.d("MOOVE","MOOVE")
             }
             MotionEvent.ACTION_UP -> {
                 mPaths.add(mDrawPath!!)
                 mDrawPath = CustomPath(color, mBrushSize)
-                Log.d("UP","UP")
             }
             else -> return false
         }
