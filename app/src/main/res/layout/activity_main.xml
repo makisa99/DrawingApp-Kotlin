@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/image" />
+             />
 
         <com.mf.drawing.DrawingView
             android:id="@+id/drawing_view"
@@ -142,8 +142,22 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="5dp"
-            android:text="G"
+            android:text="GL"
             />
+
+        <Button
+            android:id="@+id/id_undo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="UN" />
+
+        <Button
+            android:id="@+id/id_redo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="RE" />
 
         <Button
             android:id="@+id/id_brush"
@@ -151,6 +165,14 @@
             android:layout_height="50dp"
             android:layout_margin="5dp"
             android:text="BS" />
+        <Button
+            android:id="@+id/id_save"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="SV" />
+
+
     </LinearLayout>
 
 
